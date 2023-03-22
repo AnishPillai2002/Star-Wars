@@ -1,0 +1,235 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+
+    overflow-x:hidden ;
+   
+}
+
+
+.Parallax{
+
+    height: 100vh;
+    width: 100%;
+
+
+    background-repeat: no-repeat;
+    background-size: cover;  
+
+    background-attachment: fixed;
+}
+
+.First .Logo{
+
+    width: max-content;
+    height: max-content;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 20px;
+    
+}
+
+
+.First{
+    background-image: url("Images/Space.png");
+    position: relative;
+}
+
+.Second{
+    background-image: url("Images/Luke.png");
+}
+.Third{
+    background-image: url("Images/Darth.png");
+}
+
+.Fourth{
+    background-image: url("Images/Yoda.png");
+}
+
+.Fifth{
+    background-image: url("Images/KyloRen.png");
+}
+
+.Sixth{
+    background-image: url("Images/Last.png");
+}
+
+.Contents{
+
+    height: 600px;
+    width: 100%;
+    font-size: 30px;
+    font-family: "Pathway Gothic One",sans-serif;
+    font-weight: 500;
+    position: relative;
+
+    /*Setting Color*/
+    background-image: linear-gradient(#05112b,#20315a, #060516);
+    color: #a3a3e0
+
+}
+
+.C2{
+    background-image:linear-gradient(#060516,#04030f,#20315a);
+}
+
+.C3{
+    background-image:linear-gradient( #04030f,#394b7c);
+}
+
+.C4{
+    background-image:linear-gradient( #060516,#05112b,#20315a);
+}
+
+.C5{
+    background-image:linear-gradient(90deg,#060516,#ac093d,#20315a,#060516);
+}
+
+.Contents .Poem{
+
+    width: max-content;
+    height: max-content;
+   
+    
+    
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+    padding: 30px;
+
+    /*Setting Border*/
+    border: #a3a3e0 solid 5px;
+    border-radius: 10px;
+    border-style: dashed;
+}
+
+#Para{
+
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+#Para p{
+    margin: 5px;
+}
+
+/*Changing Text Color to White on hover*/
+.Contents .Poem:hover{
+    color: #f4f9fd;
+    border: #f4f9fd solid 5px;
+
+
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    display: flex;
+
+    background-image:linear-gradient(#060516,#04030f);
+    color: #E9EDE6;  
+
+    border-top: #7d93a6 solid 1px;
+}
+
+footer .Col1{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-grow: 1;
+    font-size: 15px;
+
+    text-align: center;
+    padding-top: 20px ;
+}
+
+footer .Col2{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-grow: 1;
+    font-size: 20px;
+    display: flex;
+}
+
+footer .Col2 .Message{
+
+    flex-grow: 2;
+
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer .Col2 .Logo{
+    flex-grow: 1;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer .Col2 .Logo a{
+    color: azure;
+}
+
+footer .Col2 .Logo a:hover{
+    color: #F1658A;
+}
+
+
+
+
+/* Responsive Design*/
+
+@media(max-width:500px){
+
+    .Parallax{
+
+        height: 50vh;
+    }
+    .First{
+        height: 100vh;
+    }
+    .Second{
+        background-image: url("Images/LukeM.png");
+    }
+
+    .Third{
+        background-image: url("Images/DarthM.png");
+    }
+
+    .Fourth{
+        background-image: url("Images/YodaM.png");
+    }
+
+    .Fifth{
+        background-image: url("Images/KyloRenM.png");
+    }
+    .C5{
+        background-image:linear-gradient(270deg,#060516,#ac093d,#20315a,#060516);
+    }
+    
+    .Sixth{
+        height: 100vh;
+        background-image: url("Images/LastM.png");
+    }
+
+
+
+    
+
+    .Contents{
+
+        height: 400px;
+        font-size: 10px;
+    }
+}
